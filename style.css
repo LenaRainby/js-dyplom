@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(28, 29, 28);
+}
+
+.container {
+    background-color: rgb(221, 213, 220);
+    border: 1px solid black;
+    backdrop-filter: drop-shadow(20px 20px 20px black);
+    margin: 18% auto;
+    width: 400px;
+}
+
+form {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    background-color: rgba(85, 81, 85, 0.212);
+    margin-bottom: 10px;
+    outline: none;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    width: 93%;
+}
+
+#btnRegister {
+    margin: 0 auto;
+}
+
+.buttons_container {
+    width: 100%;
+}
+
+.buttons_container button {
+    background-color: rgb(192, 190, 192);
+    font-size: 18px;
+    width: 49.5%;
+    box-sizing: border-box;
+}
+
+input:first-child {
+    margin-top: 10px;
+}
+
+button {
+    background-color: rgba(51, 47, 50, 0.781);
+    font-size: 18px;
+    width: 49.3%;
+}
+
+#loginform {
+    display: none;
+}
+
+.invalid {
+    border: 2px solid red;
+}
