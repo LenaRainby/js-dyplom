@@ -1,5 +1,7 @@
-import {initLogin} from "./login.js"
-import {initRegister} from "./register.js"
+import {initLogin} from "./login"
+import {initRegister} from "./register"
+
+import "./assets/styles/style.scss"
 
 
 const btnLogIn = document.getElementById("btnLogIn");
