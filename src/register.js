@@ -1,4 +1,5 @@
 import { users } from "./constants.js"
+import { usersLogicInit} from "./userslogic"
 
 export function initRegister() {
     const formSignUp = document.forms.registerform;
@@ -116,9 +117,13 @@ export function initRegister() {
     formSignUp.addEventListener("submit", function (event) {
         event.preventDefault();
         formHelperSignUp.getValue();
-        console.log(users);
+        // usersLogicInit()
+        // const newUsers = () =>{
+        //     return users
+        // }
+
     });
 
-    return {formSignUp}
+    return { formSignUp }
 }
 

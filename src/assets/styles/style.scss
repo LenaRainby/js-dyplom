@@ -24,32 +24,37 @@ input, button {
     font-family: monospace;
     font-size: 16px;
     font-weight: bold;
-    width: 93%;
 }
+
+input {
+    width: 93%
+}
+
 
 #btnRegister {
     margin: 0 auto;
 }
 
-.buttons_container {
-    width: 100%;
-}
-
-.buttons_container button {
+button {
     background-color: rgb(192, 190, 192);
     font-size: 18px;
     width: 49.5%;
     box-sizing: border-box;
+    margin-left: 0;
 }
 
 input:first-child {
     margin-top: 10px;
 }
 
-button {
+#btnRegister, #btnLogin {
     background-color: rgba(51, 47, 50, 0.781);
     font-size: 18px;
-    width: 49.3%;
+    width: 46.5%;
+}
+
+#btnSignUp {
+    background-color: rgba(51, 47, 50, 0.781);
 }
 
 #loginform {
@@ -58,4 +63,45 @@ button {
 
 .invalid {
     border: 2px solid red;
+}
+
+.divRow {
+    display: inline-block;
+    border: 2px solid #000;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.divRow:last-child{
+    margin:0 auto;
+}
+
+.divSection {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.btnList {
+    padding: 5px;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 13px;
+    width: 9%;
+}
+
+.firstMessage {
+    /* display: inline-block; */
+    margin-bottom:10px;
+    text-align: center;
+    /* border: 1px solid black; */
+    padding:5px;
+    color: whitesmoke;
+    font-size: 13px;
+}
+
+.listContainer {
+    text-align: center;
 }

@@ -1,13 +1,17 @@
+
 import {initLogin} from "./login"
 import {initRegister} from "./register"
+import {usersLogicInit} from "./userslogic"
 
 import "./assets/styles/style.scss"
+
 
 
 const btnLogIn = document.getElementById("btnLogIn");
 const btnSignUp = document.getElementById("btnSignUp");
 const {formLogIn} = initLogin();
 const {formSignUp} = initRegister();
+usersLogicInit();
 
 
 btnLogIn.addEventListener("click", function () {
@@ -32,4 +36,5 @@ btnSignUp.addEventListener("click", function () {
         btnLogIn.style.backgroundColor = "rgb(192, 190, 192)";
     }
 })
+
 

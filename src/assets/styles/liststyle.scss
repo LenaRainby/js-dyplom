@@ -1,0 +1,45 @@
+body{
+    background-color: wheat;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.container {
+    background-color: wheat;
+}
+
+.divRow {
+    display: inline-block;
+    border: 2px solid #000;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.divRow:last-child{
+    margin:0 auto;
+}
+
+.divSection {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+#btnList {
+    padding: 5px;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 13px;
+    width: 30px;
+}
+
+.firstMessage{
+    /* display: inline-block; */
+    margin-bottom:10px;
+    /* border: 1px solid black; */
+    padding:5px;
+    color: whitesmoke;
+    font-size: 13px;
+}
