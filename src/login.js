@@ -1,12 +1,6 @@
-import { users } from "./constants.js"
+import { users } from "./users"
 
 export function initLogin() {
-
-    // const user = {
-    //     email: "mafiahusbands@poi.com",
-    //     password: "Number1Boss",
-    //     name: "Carl Elias",
-    // };
 
     const formLogIn = document.forms.loginform;
     const btnLogin = document.getElementById("btnLogin");

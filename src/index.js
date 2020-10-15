@@ -1,7 +1,7 @@
 
 import {initLogin} from "./login"
 import {initRegister} from "./register"
-import {usersLogicInit} from "./userslogic"
+import {clientsLogicInit} from "./clientsLogic"
 
 import "./assets/styles/style.scss"
 
@@ -11,7 +11,7 @@ const btnLogIn = document.getElementById("btnLogIn");
 const btnSignUp = document.getElementById("btnSignUp");
 const {formLogIn} = initLogin();
 const {formSignUp} = initRegister();
-usersLogicInit();
+clientsLogicInit();
 
 
 btnLogIn.addEventListener("click", function () {
