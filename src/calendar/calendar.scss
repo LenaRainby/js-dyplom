@@ -2,20 +2,20 @@
     color: white;
     text-align: center;
     font-size: 30px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .calendar {
-    height: 65vh; 
-    width:90%;
+    height: 65vh;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(7, 1fr); //1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     // grid-template-rows: repeat(5, 1fr);
 }
 
-.day{
+.day {
     display: inline-grid;
     justify-content: right;
     align-items: flex-start;
@@ -26,27 +26,37 @@
 
 }
 
-.weekend.dayActive{
+// .weekend.dayActive{
+//     // justify-content: center;
+//     // align-items: center;
+//     // display: inline-grid;
+//     box-sizing: border-box;
+//     border: 10px solid rgb(58, 57, 57);
+//     background-color: rgba(238, 235, 235, 0.842);
+//     font-size:50px;
+//     // color: white;
+// }
+
+.dayActive {
     // justify-content: center;
     // align-items: center;
     // display: inline-grid;
     box-sizing: border-box;
     border: 10px solid rgb(58, 57, 57);
     background-color: rgba(238, 235, 235, 0.842);
-    font-size:50px;
+    font-size: 50px;
     // color: white;
 }
 
-.weekend {
-    color: rgb(143, 138, 143);
-}
+// .weekend {
+//     color: rgb(143, 138, 143);
+// }
 
-.weekName{
+.weekName {
     justify-items: center;
     align-items: center;
     display: inline-grid;
     font-size: 20px;
-    background-color:  rgb(194, 191, 194);
+    background-color: rgb(194, 191, 194);
     border: 1px solid black;
 }
-

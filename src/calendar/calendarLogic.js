@@ -36,23 +36,31 @@ export const getCalendar = () => {
             console.log(day);
             let dayDiv = document.createElement("div");
 
-            const isWeekend = () => {
-                if (day % 7 === 0 || (day + 1) % 7 === 0) { //or day % 7 === 6
-                    return true
-                } else {
-                    return false
-                }
-            }
+            // const isWeekend = () => {
+            //     if (day % 7 === 0 || (day + 1) % 7 === 0) { //or day % 7 === 6
+            //         return true
+            //     } else {
+            //         return false
+            //     }
+            // }
 
-            if (isWeekend() && day === dayIsTodayNumber) {
-                dayDiv.className = "day weekend dayActive";
-            } else if (isWeekend() && day !== dayIsTodayNumber) {
-                dayDiv.className = "day weekend";
-            } else if (!isWeekend() && day === dayIsTodayNumber) {
+            // if (isWeekend() && day === dayIsTodayNumber) {
+            //     dayDiv.className = "day weekend dayActive";
+            // } else if (isWeekend() && day !== dayIsTodayNumber) {
+            //     dayDiv.className = "day weekend";
+            // } else if (!isWeekend() && day === dayIsTodayNumber) {
+            //     dayDiv.className = "day dayActive";
+            // } else {
+            //     dayDiv.className = "day";
+            // }
+
+            if (day === dayIsTodayNumber) {
                 dayDiv.className = "day dayActive";
             } else {
                 dayDiv.className = "day";
             }
+
+
             dayDiv.innerText = day;
             // console.log(dayDiv);
 
@@ -72,23 +80,30 @@ export const getCalendar = () => {
 
             let dayDiv = document.createElement("div");
 
-            const isWeekend = () => {
-                if (day % 7 === 0 || (day + 1) % 7 === 0) { //or day % 7 === 6
-                    return true
-                } else {
-                    return false
-                }
-            }
+            // const isWeekend = () => {
+            //     if (day % 7 === 0 || (day + 1) % 7 === 0) { //or day % 7 === 6
+            //         return true
+            //     } else {
+            //         return false
+            //     }
+            // }
 
-            if (isWeekend() && day === dayIsTodayNumber) {
-                dayDiv.className = "day weekend dayActive";
-            } else if (isWeekend() && day !== dayIsTodayNumber) {
-                dayDiv.className = "day weekend";
-            } else if (!isWeekend() && day === dayIsTodayNumber) {
+            // if (isWeekend() && day === dayIsTodayNumber) {
+            //     dayDiv.className = "day weekend dayActive";
+            // } else if (isWeekend() && day !== dayIsTodayNumber) {
+            //     dayDiv.className = "day weekend";
+            // } else if (!isWeekend() && day === dayIsTodayNumber) {
+            //     dayDiv.className = "day dayActive";
+            // } else {
+            //     dayDiv.className = "day";
+            // }
+
+            if (day === dayIsTodayNumber) {
                 dayDiv.className = "day dayActive";
             } else {
                 dayDiv.className = "day";
             }
+
             dayDiv.innerText = day;
             // console.log(dayDiv);
 
