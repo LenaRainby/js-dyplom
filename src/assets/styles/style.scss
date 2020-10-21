@@ -99,9 +99,46 @@ input:first-child {
     /* border: 1px solid black; */
     padding:5px;
     color: whitesmoke;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .listContainer {
     text-align: center;
+}
+
+.welcomeText, .wrongPage {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 14%;
+}
+
+nav {
+    text-align: center;
+    font-size:25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; 
+    box-sizing: border-box;
+    // border-right: 1px solid white;
+    padding: 0 20px;
+    margin-right:1px;
+}
+
+.activeLink{
+    background-color: white;
+    color: black;
+}
+
+nav a:last-child{
+    border:none;
+}
+
+nav a:hover{
+    color:grey;
+    background-color: white;
+    // border-right: 1px solid rgba(51, 47, 50, 0.781);
+    cursor: pointer;
 }

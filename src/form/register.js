@@ -78,6 +78,10 @@ export function initRegister() {
                 errorElement.innerText = "Такой пользователь уже зарегистрирован.";
                 btnRegister.after(errorElement);
             } else {
+                const nameValue = this.name.value
+                console.log(nameValue)
+                localStorage.setItem("user", nameValue)
+
                 return users.push({
                     login: this.login.value,
                     name: this.name.value,
@@ -86,6 +90,7 @@ export function initRegister() {
                     city: this.city.value,
                     password: this.password.value,
                 })
+
             }
         }
     };
@@ -117,6 +122,15 @@ export function initRegister() {
         event.preventDefault();
         formHelperSignUp.getValue();
         console.log(users);
+        // let itemsArray = []
+        // localStorage.setItem('items', JSON.stringify(itemsArray))
+        // const data = JSON.parse(localStorage.getItem('items'))
+        // console.log(data);
+
+        // let userData = [];
+        // localStorage.setItem("user", JSON.stringify(userData))
+        // const data = JSON.parse(localStorage.getItem('items'))
+        // console.log(userData);
     });
 
     return { formSignUp }

@@ -49,7 +49,10 @@ export function initLogin() {
             }
 
             else if (user && this.password.value === user.password) {
+                const nameValue = user.name;
                 console.log(`Hello, ${user.name}!`);
+                localStorage.setItem("user", nameValue);
+                window.location.hash === "/clients"
             } else {
                 formLogIn.reset();
                 errorElement = document.createElement("div");
@@ -97,5 +100,5 @@ export function initLogin() {
         formHelperLogIn.getValue();
     });
 
-    return {formLogIn}
+    return { formLogIn }
 }

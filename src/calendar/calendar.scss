@@ -1,0 +1,52 @@
+.calendarText {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:20px;
+}
+
+.calendar {
+    height: 65vh; 
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr); //1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-rows: repeat(5, 1fr);
+}
+
+.day{
+    display: inline-grid;
+    justify-content: right;
+    align-items: flex-start;
+    font-size: 19px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+
+}
+
+.weekend.dayActive{
+    // justify-content: center;
+    // align-items: center;
+    // display: inline-grid;
+    box-sizing: border-box;
+    border: 10px solid rgb(58, 57, 57);
+    background-color: rgba(238, 235, 235, 0.842);
+    font-size:50px;
+    // color: white;
+}
+
+.weekend {
+    color: rgb(143, 138, 143);
+}
+
+.weekName{
+    justify-items: center;
+    align-items: center;
+    display: inline-grid;
+    font-size: 20px;
+    background-color:  rgb(194, 191, 194);
+    border: 1px solid black;
+}
+
